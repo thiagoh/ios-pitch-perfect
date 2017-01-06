@@ -39,6 +39,7 @@
                                 <state key="normal" image="StopButton"/>
                                 <connections>
                                     <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vZI-pF-YWQ"/>
+                                    <segue destination="k8g-ku-0fO" kind="show" id="Uzz-X3-4sh"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -74,7 +75,7 @@
                     <view key="view" contentMode="scaleToFill" id="03R-Vk-FGp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.1424782004" green="1" blue="0.26813168799999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2QZ-Bs-zuR" userLabel="First Responder" sceneMemberID="firstResponder"/>
