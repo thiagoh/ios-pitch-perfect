@@ -12,7 +12,9 @@ import AVFoundation
 class PlaySoundsViewController: UIViewController {
 
   var audioRecorderDescriptor: AudioRecorderDescriptor!
-  
+
+  // MARK: Outlets
+
   @IBOutlet weak var snailButton: UIButton!
   @IBOutlet weak var chipmunkButton: UIButton!
   @IBOutlet weak var rabbitButton: UIButton!
@@ -40,14 +42,13 @@ class PlaySoundsViewController: UIViewController {
     print("play the audio");
   }
 
-  /*
-    // MARK: - Navigation
+  // MARK: Actions
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+  @IBAction func playSoundForButton(_ sender: UIButton) {
+    print("Play Sound Button Pressed")
+  }
 
+  @IBAction func stopButtonPressed(_ sender: AnyObject) {
+    print("Stop Audio Button Pressed")
+  }
 }
