@@ -140,18 +140,18 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fOJ-Ba-zva">
                                         <rect key="frame" x="0.0" y="588" width="374" height="64"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rK6-hk-xwh">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rK6-hk-xwh" userLabel="stopButton">
                                                 <rect key="frame" x="155" y="0.0" width="64" height="64"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="64" id="se6-MG-JtN"/>
-                                                    <constraint firstAttribute="width" constant="64" id="v3X-X3-uxS"/>
+                                                    <constraint firstAttribute="height" constant="64" id="Sdj-nH-E9j"/>
+                                                    <constraint firstAttribute="width" constant="64" id="lfW-1M-dX0"/>
                                                 </constraints>
                                                 <state key="normal" image="StopButton"/>
+                                                <connections>
+                                                    <action selector="stopButtonPressed:" destination="k8g-ku-0fO" eventType="touchUpInside" id="pME-tc-7zp"/>
+                                                </connections>
                                             </button>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstItem="rK6-hk-xwh" firstAttribute="centerY" secondItem="fOJ-Ba-zva" secondAttribute="centerY" id="osn-Xh-kvq"/>
-                                        </constraints>
                                     </stackView>
                                 </subviews>
                             </stackView>
@@ -170,6 +170,7 @@
                         <outlet property="rabbitButton" destination="wmt-xE-Cun" id="Kzb-3c-2rG"/>
                         <outlet property="reverbButton" destination="0XZ-DL-M2d" id="Faf-VT-pmM"/>
                         <outlet property="snailButton" destination="7jq-oz-6l7" id="vYh-Dl-O7s"/>
+                        <outlet property="stopButton" destination="rK6-hk-xwh" id="4kd-f8-vug"/>
                         <outlet property="vaderButton" destination="CUY-cM-yzK" id="Mn3-bM-TJR"/>
                     </connections>
                 </viewController>
